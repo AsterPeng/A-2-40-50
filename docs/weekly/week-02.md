@@ -22,4 +22,4 @@
 
 本周未生成课程 Excel 周报；待用户提出周报任务时，按模板填报并只列已提交到 GitHub 的实际成果物。
 
-实际 commit/PR 链接：待本周提交和远端核对后记录；不预先编造。
+实际设计提交：[f060872a69be560e39f26db7da482cf2a0156b21](https://github.com/AsterPeng/A-2-40-50/commit/f060872a69be560e39f26db7da482cf2a0156b21)，已核对 GitHub `main` 曾指向同一 SHA。本周未创建 PR；本文的证据链接更新随后单独提交。
