@@ -6,7 +6,7 @@
 
 ## 当前状态
 
-第 1 周确认需求、输入约定和边界；第 2 周形成[精度 ADR](docs/adr/0001-decimal-text-boundary.md)、[写入 ADR](docs/adr/0002-a5-write-semantics.md)、[OpenAPI 草案](contracts/a5/openapi.yaml)、[客户端设计](docs/design/a5-client.md)、[Mock 设计](docs/design/mock-a5.md)和[逐场景测试计划](docs/requirements/test-cases.md)。第 3 周实现了[精度校验与 JSON 边界](src/precision/)，UT-C-40-01..04 已通过，执行详情见[第三周证据](docs/test-evidence/week-03.md)。HTTP 客户端与 Mock 仍未实现，RQ-A-2-50 的测试尚未执行。
+第 1 周确认需求、输入约定和边界；第 2 周形成[精度 ADR](docs/adr/0001-decimal-text-boundary.md)、[写入 ADR](docs/adr/0002-a5-write-semantics.md)、[OpenAPI 草案](contracts/a5/openapi.yaml)、[客户端设计](docs/design/a5-client.md)、[Mock 设计](docs/design/mock-a5.md)和[逐场景测试计划](docs/requirements/test-cases.md)。第 3 周实现了[精度校验与 JSON 边界](src/precision/)，UT-C-40-01..04 已通过。第 4 周实现了[HTTP 客户端的正常写入与 202 响应校验](src/a5-client/)，10 个第四周测试场景已通过，结果见[第四周证据](docs/test-evidence/week-04.md)。重试、超时、取消与本机 Mock 仍按后续周次实施。
 
 精度承诺从本项目收到的已规范化原始测量值文本开始，保留其有效数字和字符表示；不能恢复上游先前丢失的精度，也不代表测量准确度提高。正式 A-5 是否接受 JSON 字符串测量值未确认。若只接受 JSON 数字，必须先记录契约冲突并确认精度方案，不能静默转换或宣称端到端验收通过。HTTP 202 或本地 Mock 成功也不证明真实 A-5 落库。
 

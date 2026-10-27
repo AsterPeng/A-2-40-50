@@ -1,6 +1,6 @@
 # A5TrackClient 设计说明（第 2 周）
 
-状态：开发草案。依据：[ADR 0001](../adr/0001-decimal-text-boundary.md)、[ADR 0002](../adr/0002-a5-write-semantics.md)、[OpenAPI 草案](../../contracts/a5/openapi.yaml)和现有 `src/ports/a5-track-client.ts`。正式 A-5 地址、认证和 schema 均未确认。
+状态：开发草案；第 4 周已实现正常写入、202 校验和单次尝试的状态分类，第 5 周补全重试、超时与取消。依据：[ADR 0001](../adr/0001-decimal-text-boundary.md)、[ADR 0002](../adr/0002-a5-write-semantics.md)、[OpenAPI 草案](../../contracts/a5/openapi.yaml)和现有 `src/ports/a5-track-client.ts`。正式 A-5 地址、认证和 schema 均未确认。
 
 ## 模块边界与流程
 
@@ -15,7 +15,7 @@
 
 ## 端口复核项
 
-端口现可表达**本地验证失败**和**未列明 HTTP 状态**，并可保留 HTTP 状态码；这些类型尚无实现。第 4 周实现需确保本地失败的 `attempts=0`，其他结果按实际发送次数计数；`uncertain` 应反映请求可能已到达服务端而未获确认。`requestId` 仅从结构合法的 202 响应输出。网络异常、超时和请求中的取消不能作为已接收或明确未写入。
+端口可表达**本地验证失败**和**未列明 HTTP 状态**，并保留 HTTP 状态码。第 4 周实现了本地失败的 `attempts=0`、单次发送和严格 202 校验；`uncertain` 反映请求可能已到达服务端而未获确认。`requestId` 仅从结构合法的 202 响应输出。网络异常、超时和请求中的取消不能作为已接收或明确未写入。后续周次将补全单次尝试之外的策略。
 
 ## 202 和失败决策
 
