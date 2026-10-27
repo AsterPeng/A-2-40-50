@@ -13,10 +13,10 @@
 | 批次 JSON 边界       | `src/precision/track-batch-json.ts`                                                                 | 严格校验字段、时间、批次数量与四项测量值；构造及 JSON 往返保留字符和航迹顺序 |
 | 自动测试             | `test/precision/decimal-string.test.ts`、`test/precision/track-batch-json.test.ts`                  | UT-C-40-01..04 覆盖合法、非法、边界和 JSON 往返                              |
 | 工程与追踪           | `package.json`、`README.md`、`docs/requirements/traceability.md`、`docs/requirements/test-cases.md` | 测试文件缺失不再被视为通过；区分已通过测试与计划测试                         |
-| 执行证据             | `docs/test-evidence/week-03.md`、本文                                                               | 记录实际日期、命令、摘要、结论与阻塞                                         |
+| 执行证据与周报       | `docs/test-evidence/week-03.md`、本文、`docs/weekly/项目周报-第3周.xlsx`                            | 记录实际日期、命令、摘要、结论与阻塞；Excel 周报按课程模板填写               |
 
 ## 结论与阻塞
 
 命令和结果见[第三周证据](../test-evidence/week-03.md)。字符保真从本项目收到的已规范化原始测量值文本开始，不能恢复上游此前丢失的有效数字，也不提高测量准确度。正式 A-5 是否接受 JSON 字符串测量值仍待确认；若只接受 JSON 数字，必须记录契约冲突并确认精度方案，不静默转换或宣称端到端验收通过。
 
-本周没有实现 HTTP 客户端、Mock 或真实服务联调。课程 Excel 周报待用户另行要求时，按模板填写并仅列已提交 GitHub 的成果物。
+本周没有实现 HTTP 客户端、Mock 或真实服务联调。课程 Excel 周报的“本周成果物”列出 11 个实际文件，其中 10 个已随 `a245669` 提交并推送，周报文件纳入本次提交；“下周工作计划”中的文件和测试 ID 均明确标记为计划项。
