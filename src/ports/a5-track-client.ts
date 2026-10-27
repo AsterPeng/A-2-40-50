@@ -7,6 +7,7 @@ export interface RejectedTrack {
 }
 
 export type A5FailureReason =
+  | 'invalid-request'
   | 'bad-request'
   | 'idempotency-conflict'
   | 'rate-limited'
@@ -14,7 +15,8 @@ export type A5FailureReason =
   | 'network'
   | 'timeout'
   | 'cancelled'
-  | 'invalid-response';
+  | 'invalid-response'
+  | 'unexpected-status';
 
 export type A5WriteResult =
   | {
@@ -28,6 +30,7 @@ export type A5WriteResult =
       readonly reason: A5FailureReason;
       readonly attempts: number;
       readonly uncertain: boolean;
+      readonly httpStatus?: number;
     };
 
 export interface A5TrackClient {
