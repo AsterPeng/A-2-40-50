@@ -5,14 +5,15 @@
 - 环境：Windows PowerShell、Node.js v24.20.0、pnpm 11.25.0、Vitest 3.2.7。
 - 需求：RQ-A-2-50；输入为匿名合成的已规范化 `TrackPoint`。
 
-| 检查           | 命令或方法                                                                      | 摘要与结论                                                                                        |
-| -------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| 开始前工作树   | `git status --short --branch`                                                   | `main...origin/main`，无未提交文件                                                                |
-| 测试先行       | 先建立 `test/a5-client/http-a5-track-client.test.ts`，再实现 `src/a5-client/**` | 初次运行因实现尚不存在而失败；实现后 10 个场景通过                                                |
-| 客户端测试     | `pnpm exec vitest run test/a5-client/http-a5-track-client.test.ts`              | IT-C-50-01、02、14、24..28、30、31 共 10 个测试通过                                               |
-| 类型和源码构建 | `pnpm typecheck`、`pnpm build`                                                  | TypeScript strict 检查与构建通过                                                                  |
-| 工程质量       | `pnpm check`                                                                    | Prettier、ESLint、TypeScript 与 Vitest 均通过；3 个测试文件共 14 个测试通过，其中第四周新增 10 个 |
-| 提交前核对     | `git diff --check`、`git status --short --branch`                               | 变更仅在第四周代码、测试和记录内；空白差异检查通过，Git 的 CRLF 转换提示不影响结论                |
+| 检查           | 命令或方法                                                                      | 摘要与结论                                                                                             |
+| -------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| 开始前工作树   | `git status --short --branch`                                                   | `main...origin/main`，无未提交文件                                                                     |
+| 测试先行       | 先建立 `test/a5-client/http-a5-track-client.test.ts`，再实现 `src/a5-client/**` | 初次运行因实现尚不存在而失败；实现后 10 个场景通过                                                     |
+| 客户端测试     | `pnpm exec vitest run test/a5-client/http-a5-track-client.test.ts`              | IT-C-50-01、02、14、24..28、30、31 共 10 个测试通过                                                    |
+| 类型和源码构建 | `pnpm typecheck`、`pnpm build`                                                  | TypeScript strict 检查与构建通过                                                                       |
+| 工程质量       | `pnpm check`                                                                    | Prettier、ESLint、TypeScript 与 Vitest 均通过；3 个测试文件共 14 个测试通过，其中第四周新增 10 个      |
+| 提交前核对     | `git diff --check`、`git status --short --branch`                               | 变更仅在第四周代码、测试和记录内；空白差异检查通过，Git 的 CRLF 转换提示不影响结论                     |
+| Excel 周报核对 | 使用课程模板导出 XLSX，并以 `openpyxl.load_workbook` 只读核验                   | 保留 1 张工作表、58 个合并区域及状态下拉项；成果物栏 10 个相对路径均对应实际文件，周报文件纳入本次提交 |
 
 ## 代表性响应
 
