@@ -1,6 +1,7 @@
 node_modules/
 .tmp/
 .pnpm-store/
+*.inspect.ndjson
 dist/
 coverage/
 .env

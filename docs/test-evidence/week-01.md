@@ -11,6 +11,6 @@
 | 质量检查        | `pnpm check`                                                                                              | Prettier、ESLint、`tsc --noEmit` 成功；Vitest 报告无测试文件 | 工程骨架检查通过，功能需求未验收         |
 | 构建            | `pnpm build`                                                                                              | 成功                                                         | 类型与端口草案可编译，`dist/` 被忽略     |
 | GitHub 远端读取 | `git -c http.sslBackend=schannel -c http.version=HTTP/1.1 ls-remote origin HEAD`；`git fetch origin main` | 成功，远端 `main` 初始提交为 `753569a`，仅有 `README.md`     | 本地 `main` 已接入远端历史；推送仍待核实 |
-| Git 成果物核对  | `git status`、`git ls-files`                                                                              | 提交前后复核                                                 | 只把仓库中实际存在的文件写入周报成果物   |
+| Git 成果物核对  | `git diff --cached --name-only`、`git diff --cached --check`、`git status`                                | 第一批 19 个文件已提交为本地 `652ef0f`，周报 XLSX 待下一提交 | 只把仓库中实际存在的文件写入周报成果物   |
 
 本周映射的测试 ID 见 `docs/requirements/traceability.md`；均为计划中的测试，执行证据待对应周次生成。真实 A-5 地址、授权与契约尚未确认，未访问真实服务。安装过程曾因网络/无交互模式和 `esbuild` 构建许可中断，已只允许该依赖的构建并完成安装；不把这些中断写成最终检查失败。GitHub 曾因代理及私有状态不可读，仓库公开后以 Windows TLS 选项读取并抓取成功。

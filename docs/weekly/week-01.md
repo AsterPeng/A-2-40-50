@@ -7,14 +7,14 @@
 
 ## 本周成果物
 
-| 工作               | 仓库中的实际成果物                                                                                                                                                       | 状态                            |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------- |
-| 项目入口与范围     | `CURRENT_LINE_PROJECT_BRIEF.md`、`README.md`、`docs/requirements/requirements.md`                                                                                        | 已建立                          |
-| 输入约定           | `docs/requirements/input-contract.md`、`src/domain/track.ts`                                                                                                             | 草案，待第 2 周复核             |
-| A-5 边界及未决问题 | `docs/requirements/a5-open-questions.md`、`src/ports/a5-track-client.ts`                                                                                                 | 草案，未取得正式契约            |
-| 验收标准与测试方向 | `docs/requirements/traceability.md`                                                                                                                                      | 已规划测试 ID，尚未实现功能测试 |
-| 工程骨架           | `package.json`、`pnpm-lock.yaml`、`pnpm-workspace.yaml`、`tsconfig.json`、`tsconfig.build.json`、`eslint.config.js`、`.prettierrc.json`、`.prettierignore`、`.gitignore` | 可运行质量检查和构建            |
-| 周内证据           | `docs/test-evidence/week-01.md`、本文                                                                                                                                    | 已记录检查与阻塞                |
+| 工作               | 仓库中的实际成果物                                                                                                                                                       | 状态                                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- |
+| 项目入口与范围     | `CURRENT_LINE_PROJECT_BRIEF.md`、`README.md`、`docs/requirements/requirements.md`                                                                                        | 已建立                                |
+| 输入约定           | `docs/requirements/input-contract.md`、`src/domain/track.ts`                                                                                                             | 草案，待第 2 周复核                   |
+| A-5 边界及未决问题 | `docs/requirements/a5-open-questions.md`、`src/ports/a5-track-client.ts`                                                                                                 | 草案，未取得正式契约                  |
+| 验收标准与测试方向 | `docs/requirements/traceability.md`                                                                                                                                      | 已规划测试 ID，尚未实现功能测试       |
+| 工程骨架           | `package.json`、`pnpm-lock.yaml`、`pnpm-workspace.yaml`、`tsconfig.json`、`tsconfig.build.json`、`eslint.config.js`、`.prettierrc.json`、`.prettierignore`、`.gitignore` | 可运行质量检查和构建                  |
+| 周内证据           | `docs/test-evidence/week-01.md`、`docs/weekly/项目周报-第1周.xlsx`、本文                                                                                                 | 已记录检查与阻塞；XLSX 按课程模板填写 |
 
 ## 测试与命令
 
@@ -27,4 +27,4 @@
 - 课程窗口已过，按真实日期记录执行。
 - 简报中 `RQ-A-1-40/50` 与本项目指定的 `RQ-A-2-40/50` 不一致，按本项目编号记录并保留原简报。
 
-实际 commit/PR 链接：待本地提交和 GitHub 推送后记录；不预先编造。
+实际本地 commit：`652ef0f`（第一周需求、工程骨架与证据）；XLSX 周报将随下一提交纳入。GitHub 链接待推送成功并核对远端后记录；不预先编造。
