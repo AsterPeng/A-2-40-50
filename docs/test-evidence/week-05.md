@@ -1,6 +1,6 @@
 # 第 5 周失败处理与幂等可靠性证据
 
-- 课程窗口：待确认。
+- 周报周期（用户确认）：2026-10-27 至 2026-11-02；原计划表未指定第五周窗口。
 - 实际执行日期：2026-11-03（Asia/Shanghai）。
 - 环境：Windows PowerShell、Node.js v24.20.0、pnpm 11.25.0、Vitest 3.2.7。
 - 需求：RQ-A-2-50；输入是匿名合成、已规范化的 `TrackPoint`。
@@ -15,6 +15,7 @@
 | 全量质量检查 | `pnpm check`                                                                                  | Prettier、ESLint、TypeScript 与 Vitest 通过；4 个测试文件共 31 个测试，其中第五周 17 个   |
 | 源码构建     | `pnpm build`                                                                                  | TypeScript ESM 构建通过                                                                   |
 | 提交前核对   | `git diff --check`、`git status --short`、`git diff --cached --name-only`                     | 检查空白差异、变更范围和暂存成果物；第四周 Excel 与新设计说明书不列入本周提交             |
+| 周报核对     | 复用第四周工作簿版式导出第五周 XLSX，并只读复核                                               | 保留一张工作表、56 个合并区域和项目状态下拉；总体进度为数值 50%；成果物栏列出实际文件     |
 
 ## 代表性断言
 
