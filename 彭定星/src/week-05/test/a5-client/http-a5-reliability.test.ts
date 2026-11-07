@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { HttpA5TrackClient } from '../../src/a5-client/http-a5-track-client.js';
-import type { TrackBatch } from '../../src/domain/track.js';
-import { parseTrackPoint } from '../../src/precision/track-batch-json.js';
+import { HttpA5TrackClient } from '../../implementation/a5-client/http-a5-track-client.js';
+import type { TrackBatch } from '../../implementation/domain/track.js';
+import { parseTrackPoint } from '../../implementation/precision/track-batch-json.js';
 
 const track = parseTrackPoint({
   timestamp: '2026-10-27T08:30:12.345Z',

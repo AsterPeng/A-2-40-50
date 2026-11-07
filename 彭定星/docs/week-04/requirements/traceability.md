@@ -4,9 +4,9 @@ UT-C-40-01..04 已在第 3 周实现并通过；IT-C-50-01、02、14、24..28、
 
 | 需求      | 验收点                                                                                           | 接口或模块                                | 自动测试 ID                                | 计划周次   |
 | --------- | ------------------------------------------------------------------------------------------------ | ----------------------------------------- | ------------------------------------------ | ---------- |
-| RQ-A-2-40 | 从已规范化原始测量值文本起验证十进制语法，不改写长小数、尾零、指数、负零；拒绝非法及非字符串输入 | `src/week-04/src/precision/decimal-string.ts`         | UT-C-40-01、UT-C-40-02                     | 第 3 周    |
-| RQ-A-2-40 | 不经 JavaScript `number` 比较坐标边界，保存值逐字符不变                                          | `src/week-04/src/precision/decimal-string.ts`         | UT-C-40-03                                 | 第 3 周    |
-| RQ-A-2-40 | 批次 JSON 与 Mock 接收保留原始字符和数组顺序；不声称恢复上游已丢失精度或提高测量准确度           | `src/week-04/src/precision/track-batch-json.ts`、Mock | UT-C-40-04、CT-I3-A5-01、CT-I3-A5-03       | 第 3、6 周 |
+| RQ-A-2-40 | 从已规范化原始测量值文本起验证十进制语法，不改写长小数、尾零、指数、负零；拒绝非法及非字符串输入 | `src/week-04/implementation/precision/decimal-string.ts`         | UT-C-40-01、UT-C-40-02                     | 第 3 周    |
+| RQ-A-2-40 | 不经 JavaScript `number` 比较坐标边界，保存值逐字符不变                                          | `src/week-04/implementation/precision/decimal-string.ts`         | UT-C-40-03                                 | 第 3 周    |
+| RQ-A-2-40 | 批次 JSON 与 Mock 接收保留原始字符和数组顺序；不声称恢复上游已丢失精度或提高测量准确度           | `src/week-04/implementation/precision/track-batch-json.ts`、Mock | UT-C-40-04、CT-I3-A5-01、CT-I3-A5-03       | 第 3、6 周 |
 | RQ-A-2-40 | 若正式 A-5 只接受 JSON 数字，记录冲突、确认精度方案并阻断端到端验收                              | 正式契约确认流程                          | CT-I3-A5-04（条件性）                      | 第 8 周    |
 | RQ-A-2-50 | 单条/批量 POST、批次验证与 202 全接收                                                            | `A5TrackClient`、HTTP 客户端              | IT-C-50-01、02、24、31                     | 第 4 周    |
 | RQ-A-2-50 | 202 部分/全部拒绝、计数守恒、索引及结构校验                                                      | HTTP 客户端响应解析                       | IT-C-50-14、25、26、27、30；CT-I3-A5-02    | 第 4、6 周 |

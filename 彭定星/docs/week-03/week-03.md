@@ -8,7 +8,7 @@
 | 检查           | 命令或方法                                                     | 摘要与结论                                                                                                             |
 | -------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | 开始前工作树   | `git status --short --branch`                                  | `main...origin/main`，无未提交文件                                                                                     |
-| 测试先行       | 先建立 `src/week-03/test/precision/*.test.ts`，再实现 `src/week-03/src/precision/**`   | 四个 ID 的输入和断言先落地；首次 `pnpm test` 因受限进程环境的 `spawn EPERM` 未执行断言，不视为测试结果                 |
+| 测试先行       | 先建立 `src/week-03/test/precision/*.test.ts`，再实现 `src/week-03/implementation/precision/**`   | 四个 ID 的输入和断言先落地；首次 `pnpm test` 因受限进程环境的 `spawn EPERM` 未执行断言，不视为测试结果                 |
 | 缺陷复现与修复 | `pnpm exec vitest run test/precision/track-batch-json.test.ts` | 稀疏 `tracks` 数组新增断言先失败；改为逐项检查并拒绝空位后，同一测试通过                                               |
 | 精度与批次测试 | `pnpm test`                                                    | 2 个测试文件、4 个测试均通过；UT-C-40-01..04 各有一个实际测试场景                                                      |
 | 工程质量       | `pnpm check`                                                   | Prettier、ESLint、TypeScript 与 Vitest 全部通过                                                                        |

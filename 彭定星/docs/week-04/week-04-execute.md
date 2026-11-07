@@ -9,11 +9,11 @@
 
 | 工作           | 实际文件                                                                                                        | 结论                                                                                  |
 | -------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| HTTP 客户端    | `src/week-04/src/a5-client/http-a5-track-client.ts`                                                                         | 无默认真实地址，注入 `fetch`；构造固定请求体和 SHA-256 幂等键，单次 POST `/v1/tracks` |
-| 202 响应边界   | `src/week-04/src/a5-client/parse-acceptance.ts`                                                                             | 校验全部/部分拒绝、计数守恒、唯一合法索引、字段和类型                                 |
+| HTTP 客户端    | `src/week-04/implementation/a5-client/http-a5-track-client.ts`                                                                         | 无默认真实地址，注入 `fetch`；构造固定请求体和 SHA-256 幂等键，单次 POST `/v1/tracks` |
+| 202 响应边界   | `src/week-04/implementation/a5-client/parse-acceptance.ts`                                                                             | 校验全部/部分拒绝、计数守恒、唯一合法索引、字段和类型                                 |
 | 自动测试       | `src/week-04/test/a5-client/http-a5-track-client.test.ts`                                                                   | IT-C-50-01、02、14、24..28、30、31 共 10 个场景                                       |
 | 设计与追踪     | `docs/week-04/project-status.md`、`docs/week-04/design/a5-client.md`、`docs/week-04/requirements/test-cases.md`、`docs/week-04/requirements/traceability.md` | 区分已实现客户端行为与后续计划                                                        |
-| 执行证据与周报 | `docs/week-04/week-04.md`、本文、`deliverables/week-04/项目周报-第4周.xlsx`                                        | 记录实际日期、命令、样例、结论和阻塞；Excel 周报按课程模板填写                        |
+| 执行证据与周报 | `docs/week-04/week-04.md`、本文、`deliverables/周报/项目周报-第4周.xlsx`                                        | 记录实际日期、命令、样例、结论和阻塞；Excel 周报按课程模板填写                        |
 
 ## 结论与阻塞
 

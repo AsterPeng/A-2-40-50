@@ -9,11 +9,11 @@
 
 | 工作                 | 实际文件                                                                                            | 结论                                                                         |
 | -------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| 十进制文本与坐标校验 | `src/week-03/src/precision/decimal-string.ts`                                                                   | 合法输入原样返回；使用十进制位数和逐位比较检查坐标，不转成二进制浮点数       |
-| 批次 JSON 边界       | `src/week-03/src/precision/track-batch-json.ts`                                                                 | 严格校验字段、时间、批次数量与四项测量值；构造及 JSON 往返保留字符和航迹顺序 |
+| 十进制文本与坐标校验 | `src/week-03/implementation/precision/decimal-string.ts`                                                                   | 合法输入原样返回；使用十进制位数和逐位比较检查坐标，不转成二进制浮点数       |
+| 批次 JSON 边界       | `src/week-03/implementation/precision/track-batch-json.ts`                                                                 | 严格校验字段、时间、批次数量与四项测量值；构造及 JSON 往返保留字符和航迹顺序 |
 | 自动测试             | `src/week-03/test/precision/decimal-string.test.ts`、`src/week-03/test/precision/track-batch-json.test.ts`                  | UT-C-40-01..04 覆盖合法、非法、边界和 JSON 往返                              |
 | 工程与追踪           | `src/week-03/package.json`、`docs/week-03/project-status.md`、`docs/week-03/requirements/traceability.md`、`docs/week-03/requirements/test-cases.md` | 测试文件缺失不再被视为通过；区分已通过测试与计划测试                         |
-| 执行证据与周报       | `docs/week-03/week-03.md`、本文、`deliverables/week-03/项目周报-第3周.xlsx`                            | 记录实际日期、命令、摘要、结论与阻塞；Excel 周报按课程模板填写               |
+| 执行证据与周报       | `docs/week-03/week-03.md`、本文、`deliverables/周报/项目周报-第3周.xlsx`                            | 记录实际日期、命令、摘要、结论与阻塞；Excel 周报按课程模板填写               |
 
 ## 结论与阻塞
 

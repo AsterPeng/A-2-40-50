@@ -9,5 +9,5 @@
     "skipLibCheck": true,
     "types": ["node", "vitest/globals"]
   },
-  "include": ["src/**/*.ts", "mock-a5/**/*.ts", "test/**/*.ts"]
+  "include": ["implementation/**/*.ts", "mock-a5/**/*.ts", "test/**/*.ts"]
 }

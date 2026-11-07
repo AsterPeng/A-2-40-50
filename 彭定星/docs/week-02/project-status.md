@@ -6,7 +6,7 @@
 
 ## 当前状态
 
-第 1 周确认需求、输入约定和边界；第 2 周形成[精度 ADR](adr/0001-decimal-text-boundary.md)、[写入 ADR](adr/0002-a5-write-semantics.md)、[OpenAPI 草案](contracts/a5/openapi.yaml)、[客户端设计](design/a5-client.md)、[Mock 设计](design/mock-a5.md)和[逐场景测试计划](requirements/test-cases.md)。`src/week-02/src/domain` 与 `src/week-02/src/ports` 仍是待实现时复核的类型草案；精度校验、HTTP 客户端和 Mock 尚未实现。测试 ID 已在[追踪矩阵](requirements/traceability.md)中规划，功能测试尚未执行。
+第 1 周确认需求、输入约定和边界；第 2 周形成[精度 ADR](adr/0001-decimal-text-boundary.md)、[写入 ADR](adr/0002-a5-write-semantics.md)、[OpenAPI 草案](contracts/a5/openapi.yaml)、[客户端设计](design/a5-client.md)、[Mock 设计](design/mock-a5.md)和[逐场景测试计划](requirements/test-cases.md)。`src/week-02/implementation/domain` 与 `src/week-02/implementation/ports` 仍是待实现时复核的类型草案；精度校验、HTTP 客户端和 Mock 尚未实现。测试 ID 已在[追踪矩阵](requirements/traceability.md)中规划，功能测试尚未执行。
 
 精度承诺从本项目收到的已规范化原始测量值文本开始，保留其有效数字和字符表示；不能恢复上游先前丢失的精度，也不代表测量准确度提高。正式 A-5 是否接受 JSON 字符串测量值未确认。若只接受 JSON 数字，必须先记录契约冲突并确认精度方案，不能静默转换或宣称端到端验收通过。HTTP 202 或本地 Mock 成功也不证明真实 A-5 落库。
 

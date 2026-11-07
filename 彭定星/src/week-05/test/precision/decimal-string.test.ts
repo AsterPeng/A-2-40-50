@@ -3,7 +3,7 @@ import {
   parseDecimalString,
   parseLatitude,
   parseLongitude,
-} from '../../src/precision/decimal-string.js';
+} from '../../implementation/precision/decimal-string.js';
 
 describe('RQ-A-2-40 decimal text', () => {
   it('UT-C-40-01 retains every character of valid measurements', () => {

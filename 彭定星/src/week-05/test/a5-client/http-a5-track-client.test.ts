@@ -1,10 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { HttpA5TrackClient } from '../../src/a5-client/http-a5-track-client.js';
-import type { TrackBatch, TrackPoint } from '../../src/domain/track.js';
+import { HttpA5TrackClient } from '../../implementation/a5-client/http-a5-track-client.js';
+import type {
+  TrackBatch,
+  TrackPoint,
+} from '../../implementation/domain/track.js';
 import {
   parseTrackBatchJson,
   parseTrackPoint,
-} from '../../src/precision/track-batch-json.js';
+} from '../../implementation/precision/track-batch-json.js';
 
 const first = parseTrackPoint({
   timestamp: '2026-10-27T08:30:12.345Z',

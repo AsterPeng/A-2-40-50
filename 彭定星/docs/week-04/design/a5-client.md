@@ -1,10 +1,10 @@
 # A5TrackClient 设计说明（第 2 周）
 
-状态：开发草案；第 4 周已实现正常写入、202 校验和单次尝试的状态分类，第 5 周补全重试、超时与取消。依据：[ADR 0001](../adr/0001-decimal-text-boundary.md)、[ADR 0002](../adr/0002-a5-write-semantics.md)、[OpenAPI 草案](../contracts/a5/openapi.yaml)和现有 `src/week-04/src/ports/a5-track-client.ts`。正式 A-5 地址、认证和 schema 均未确认。
+状态：开发草案；第 4 周已实现正常写入、202 校验和单次尝试的状态分类，第 5 周补全重试、超时与取消。依据：[ADR 0001](../adr/0001-decimal-text-boundary.md)、[ADR 0002](../adr/0002-a5-write-semantics.md)、[OpenAPI 草案](../contracts/a5/openapi.yaml)和现有 `src/week-04/implementation/ports/a5-track-client.ts`。正式 A-5 地址、认证和 schema 均未确认。
 
 ## 模块边界与流程
 
-`src/week-04/src/precision` 接受 `unknown`，验证并保存测量值原字符串；`src/week-04/src/a5-client` 只接受已验证 `TrackBatch`，但在运行时再次校验公开端口输入以防类型断言绕过。单条调用先包装成一条批次。所有额外字段、缺失字段、非字符串测量值、非法日期、非法批次大小都在发送前失败。配置包括基址、每次超时、最大尝试数、最大等待、是否重试超时和受控依赖；真实基址不得作为默认值。
+`src/week-04/implementation/precision` 接受 `unknown`，验证并保存测量值原字符串；`src/week-04/implementation/a5-client` 只接受已验证 `TrackBatch`，但在运行时再次校验公开端口输入以防类型断言绕过。单条调用先包装成一条批次。所有额外字段、缺失字段、非字符串测量值、非法日期、非法批次大小都在发送前失败。配置包括基址、每次超时、最大尝试数、最大等待、是否重试超时和受控依赖；真实基址不得作为默认值。
 
 1. 在输入边界验证 `unknown`，返回有明确路径的验证错误；不转换单位、时间或测量值。
 2. 按 `schemaVersion`、`tracks` 和 `TrackPoint` 草案字段顺序构造请求 JSON 一次；记录字节串，仅对它计算 SHA-256 幂等键。

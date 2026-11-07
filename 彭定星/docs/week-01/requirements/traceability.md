@@ -4,9 +4,9 @@
 
 | 需求      | 验收点                                 | 接口或模块                          | 自动测试 ID / 方向                                                           | 计划周次   |
 | --------- | -------------------------------------- | ----------------------------------- | ---------------------------------------------------------------------------- | ---------- |
-| RQ-A-2-40 | 十进制字符串语法，拒绝非字符串及非法值 | `src/precision/decimal-string.ts`   | UT-C-40-01：合法/非法语法、指数、负零                                        | 第 3 周    |
-| RQ-A-2-40 | 坐标边界无精度损失                     | `src/precision/decimal-string.ts`   | UT-C-40-02：长小数、尾零和经纬度边界                                         | 第 3 周    |
-| RQ-A-2-40 | 批次 JSON 与 Mock 接收字符保真         | `src/precision/track-batch-json.ts` | UT-C-40-03：序列化/反序列化原字符；CT-I3-A5-03：Mock 字符保真                | 第 3、6 周 |
+| RQ-A-2-40 | 十进制字符串语法，拒绝非字符串及非法值 | `src/week-01/implementation/precision/decimal-string.ts`   | UT-C-40-01：合法/非法语法、指数、负零                                        | 第 3 周    |
+| RQ-A-2-40 | 坐标边界无精度损失                     | `src/week-01/implementation/precision/decimal-string.ts`   | UT-C-40-02：长小数、尾零和经纬度边界                                         | 第 3 周    |
+| RQ-A-2-40 | 批次 JSON 与 Mock 接收字符保真         | `src/week-01/implementation/precision/track-batch-json.ts` | UT-C-40-03：序列化/反序列化原字符；CT-I3-A5-03：Mock 字符保真                | 第 3、6 周 |
 | RQ-A-2-50 | 单条/批量写入与 202 全接收             | `A5TrackClient` / HTTP 客户端       | IT-C-50-01：单条与批量；IT-C-50-02：全接收                                   | 第 4 周    |
 | RQ-A-2-50 | 202 部分拒绝和非法响应                 | HTTP 客户端响应解析                 | IT-C-50-14：部分拒绝、计数与索引异常                                         | 第 4 周    |
 | RQ-A-2-50 | 永久失败与有限重试                     | HTTP 客户端                         | IT-C-50-03..06：400/409/429/503、网络与重试上限                              | 第 5 周    |

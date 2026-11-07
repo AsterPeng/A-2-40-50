@@ -10,11 +10,11 @@
 | 工作             | 实际文件                                                                                          | 结论                                                                 |
 | ---------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | 精度与验收边界   | `docs/week-02/adr/0001-decimal-text-boundary.md`、`docs/week-02/requirements/requirements.md`                     | 从本项目输入的已规范化原始文本起保真；不恢复上游精度或提高测量准确度 |
-| 写入可靠性决策   | `docs/week-02/adr/0002-a5-write-semantics.md`、`docs/week-02/design/a5-client.md`、`src/week-02/src/ports/a5-track-client.ts` | 202、失败、取消、有限重试、未确认状态和稳定幂等键均有设计            |
+| 写入可靠性决策   | `docs/week-02/adr/0002-a5-write-semantics.md`、`docs/week-02/design/a5-client.md`、`src/week-02/implementation/ports/a5-track-client.ts` | 202、失败、取消、有限重试、未确认状态和稳定幂等键均有设计            |
 | 接口和 Mock 草案 | `docs/week-02/contracts/a5/openapi.yaml`、`docs/week-02/design/mock-a5.md`                                             | 测量值用 JSON 字符串；本地 Mock 不代表真实存储                       |
 | 测试方向与追溯   | `docs/week-02/requirements/test-cases.md`、`docs/week-02/requirements/traceability.md`                            | 41 个唯一的计划测试 ID，需求、接口和场景可追溯；尚无功能测试文件     |
 | 外部问题和入口   | `docs/week-02/requirements/a5-open-questions.md`、`docs/week-02/project-status.md`                                             | A5-Q11 单列字符串测量值契约冲突；所有外部确认仍为待确认              |
-| 执行证据与周报   | `docs/week-02/week-02.md`、本文、`deliverables/week-02/项目周报-第2周.xlsx`                          | 记录真实日期、文件、命令、结果和阻塞；Excel 于 2026-11-07 补报       |
+| 执行证据与周报   | `docs/week-02/week-02.md`、本文、`deliverables/周报/项目周报-第2周.xlsx`                          | 记录真实日期、文件、命令、结果和阻塞；Excel 于 2026-11-07 补报       |
 
 ## 检查和阻塞
 

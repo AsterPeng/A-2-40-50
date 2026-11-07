@@ -10,11 +10,11 @@
 | 工作               | 仓库中的实际成果物                                                                                                                                                       | 状态                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- |
 | 项目入口与范围     | `docs/week-01/project-brief.md`、`docs/week-01/project-status.md`、`docs/week-01/requirements/requirements.md`                                                                                        | 已建立                                |
-| 输入约定           | `docs/week-01/requirements/input-contract.md`、`src/week-01/src/domain/track.ts`                                                                                                             | 草案，待第 2 周复核                   |
-| A-5 边界及未决问题 | `docs/week-01/requirements/a5-open-questions.md`、`src/week-01/src/ports/a5-track-client.ts`                                                                                                 | 草案，未取得正式契约                  |
+| 输入约定           | `docs/week-01/requirements/input-contract.md`、`src/week-01/implementation/domain/track.ts`                                                                                                             | 草案，待第 2 周复核                   |
+| A-5 边界及未决问题 | `docs/week-01/requirements/a5-open-questions.md`、`src/week-01/implementation/ports/a5-track-client.ts`                                                                                                 | 草案，未取得正式契约                  |
 | 验收标准与测试方向 | `docs/week-01/requirements/traceability.md`                                                                                                                                      | 已规划测试 ID，尚未实现功能测试       |
 | 工程骨架           | `src/week-01/package.json`、`src/week-01/pnpm-lock.yaml`、`src/week-01/pnpm-workspace.yaml`、`src/week-01/tsconfig.json`、`src/week-01/tsconfig.build.json`、`src/week-01/eslint.config.js`、`src/week-01/.prettierrc.json`、`src/week-01/.prettierignore`、`src/week-01/.gitignore` | 可运行质量检查和构建                  |
-| 周内证据           | `docs/week-01/week-01.md`、`deliverables/week-01/项目周报-第1周.xlsx`、本文                                                                                                 | 已记录检查与阻塞；XLSX 按课程模板填写 |
+| 周内证据           | `docs/week-01/week-01.md`、`deliverables/周报/项目周报-第1周.xlsx`、本文                                                                                                 | 已记录检查与阻塞；XLSX 按课程模板填写 |
 
 ## 测试与命令
 

@@ -3,7 +3,7 @@ import {
   parseTrackBatch,
   parseTrackBatchJson,
   stringifyTrackBatch,
-} from '../../src/precision/track-batch-json.js';
+} from '../../implementation/precision/track-batch-json.js';
 
 const firstTrack = {
   timestamp: '2026-10-27T08:30:12.345Z',

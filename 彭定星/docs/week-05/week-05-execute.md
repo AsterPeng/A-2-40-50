@@ -9,10 +9,10 @@
 
 | 工作           | 实际文件                                                                     | 结论                                                                                   |
 | -------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| 客户端可靠性   | `src/week-05/src/a5-client/http-a5-track-client.ts`、`src/week-05/src/a5-client/reliability.ts`      | 最大尝试数含首次调用；超时默认不重试；取消可中断请求和等待；所有重试复用同一请求体与键 |
+| 客户端可靠性   | `src/week-05/implementation/a5-client/http-a5-track-client.ts`、`src/week-05/implementation/a5-client/reliability.ts`      | 最大尝试数含首次调用；超时默认不重试；取消可中断请求和等待；所有重试复用同一请求体与键 |
 | 自动测试       | `src/week-05/test/a5-client/http-a5-reliability.test.ts`                                 | 覆盖 IT-C-50-03..06、12、13、15..19、29、32、33，共 17 个第五周测试                    |
 | 设计与追踪     | `docs/week-05/project-status.md`、`docs/week-05/design/a5-client.md`、`docs/week-05/requirements/traceability.md` | 更新已实现状态、配置默认值与测试执行边界                                               |
-| 执行证据与周报 | `docs/week-05/week-05.md`、本文、`deliverables/week-05/项目周报-第5周.xlsx`     | 记录周报周期与真实执行日期、命令、测试 ID、结论和阻塞项                                |
+| 执行证据与周报 | `docs/week-05/week-05.md`、本文、`deliverables/周报/项目周报-第5周.xlsx`     | 记录周报周期与真实执行日期、命令、测试 ID、结论和阻塞项                                |
 
 ## 结论与阻塞
 

@@ -6,7 +6,7 @@
 
 ## 当前状态
 
-第 1 周只确认需求、输入约定、边界与验收方向。`src/week-01/src/domain` 和 `src/week-01/src/ports` 是待第 2 周复核的类型与端口草案；精度校验、HTTP 客户端和 Mock 尚未实现。测试 ID 已在[追踪矩阵](requirements/traceability.md)中规划，功能测试尚未执行。HTTP 202 或本地 Mock 结果均不能证明真实 A-5 落库。
+第 1 周只确认需求、输入约定、边界与验收方向。`src/week-01/implementation/domain` 和 `src/week-01/implementation/ports` 是待第 2 周复核的类型与端口草案；精度校验、HTTP 客户端和 Mock 尚未实现。测试 ID 已在[追踪矩阵](requirements/traceability.md)中规划，功能测试尚未执行。HTTP 202 或本地 Mock 结果均不能证明真实 A-5 落库。
 
 ## 工程检查
 

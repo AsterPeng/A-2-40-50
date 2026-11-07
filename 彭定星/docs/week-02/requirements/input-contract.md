@@ -14,4 +14,4 @@
 
 请求草案为 `{ "schemaVersion": "1.0", "tracks": [TrackPoint] }`，批次暂定 1 至 1000 条。字段缺失或额外字段均拒绝。测量值验证之后仍保存输入字符串，不能通过数值转换重新生成字符串。尾零、指数和负零的具体合法语法及边界比较算法在第 2 周 ADR 中明确，并由第 3 周自动测试验证。
 
-初始领域类型见 `src/week-02/src/domain/track.ts`，端口草案见 `src/week-02/src/ports/a5-track-client.ts`。这些类型不是运行时验证器，不能把现阶段的类型检查当作输入验收。
+初始领域类型见 `src/week-02/implementation/domain/track.ts`，端口草案见 `src/week-02/implementation/ports/a5-track-client.ts`。这些类型不是运行时验证器，不能把现阶段的类型检查当作输入验收。

@@ -8,7 +8,7 @@
 | 检查           | 命令或方法                                                                      | 摘要与结论                                                                                             |
 | -------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | 开始前工作树   | `git status --short --branch`                                                   | `main...origin/main`，无未提交文件                                                                     |
-| 测试先行       | 先建立 `src/week-04/test/a5-client/http-a5-track-client.test.ts`，再实现 `src/week-04/src/a5-client/**` | 初次运行因实现尚不存在而失败；实现后 10 个场景通过                                                     |
+| 测试先行       | 先建立 `src/week-04/test/a5-client/http-a5-track-client.test.ts`，再实现 `src/week-04/implementation/a5-client/**` | 初次运行因实现尚不存在而失败；实现后 10 个场景通过                                                     |
 | 客户端测试     | `pnpm exec vitest run test/a5-client/http-a5-track-client.test.ts`              | IT-C-50-01、02、14、24..28、30、31 共 10 个测试通过                                                    |
 | 类型和源码构建 | `pnpm typecheck`、`pnpm build`                                                  | TypeScript strict 检查与构建通过                                                                       |
 | 工程质量       | `pnpm check`                                                                    | Prettier、ESLint、TypeScript 与 Vitest 均通过；3 个测试文件共 14 个测试通过，其中第四周新增 10 个      |

@@ -6,7 +6,7 @@
 
 所有写入经 `A5TrackClient`。`postOne` 将单条航迹包装成 `TrackBatch`，`postBatch` 处理 1 至 1000 条；两者在发出网络请求前调用同一个运行时验证器。请求草案为 `POST /v1/tracks`、`Content-Type: application/json`、必填 `Idempotency-Key`。四个测量值始终是 JSON 字符串。公开端口不使用 `any`，解析网络内容以 `unknown` 开始。
 
-`src/week-02/src/ports/a5-track-client.ts` 已在第 2 周补充 `invalid-request`、`unexpected-status` 和可选 HTTP 状态；仍是类型草案，尚无运行时验证和 HTTP 实现。本地无效批次的 `attempts` 为 0，且不得发送网络请求；未知 HTTP 状态不得落入 202 成功分支。正式契约差异应同步端口、OpenAPI、Mock、测试和追踪矩阵。
+`src/week-02/implementation/ports/a5-track-client.ts` 已在第 2 周补充 `invalid-request`、`unexpected-status` 和可选 HTTP 状态；仍是类型草案，尚无运行时验证和 HTTP 实现。本地无效批次的 `attempts` 为 0，且不得发送网络请求；未知 HTTP 状态不得落入 202 成功分支。正式契约差异应同步端口、OpenAPI、Mock、测试和追踪矩阵。
 
 ## 幂等与请求体
 
