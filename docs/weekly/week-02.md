@@ -14,12 +14,12 @@
 | 接口和 Mock 草案 | `contracts/a5/openapi.yaml`、`docs/design/mock-a5.md`                                             | 测量值用 JSON 字符串；本地 Mock 不代表真实存储                       |
 | 测试方向与追溯   | `docs/requirements/test-cases.md`、`docs/requirements/traceability.md`                            | 41 个唯一的计划测试 ID，需求、接口和场景可追溯；尚无功能测试文件     |
 | 外部问题和入口   | `docs/requirements/a5-open-questions.md`、`README.md`                                             | A5-Q11 单列字符串测量值契约冲突；所有外部确认仍为待确认              |
-| 执行证据         | `docs/test-evidence/week-02.md`、本文                                                             | 记录真实日期、文件、命令、结果和阻塞                                 |
+| 执行证据与周报   | `docs/test-evidence/week-02.md`、本文、`docs/weekly/项目周报-第2周.xlsx`                          | 记录真实日期、文件、命令、结果和阻塞；Excel 于 2026-11-07 补报       |
 
 ## 检查和阻塞
 
 命令、环境和结果见[第二周证据](../test-evidence/week-02.md)。`pnpm check` 与 `pnpm build` 通过，但 Vitest 无测试文件，不能视为 RQ-A-2-40/50 功能通过。正式 A-5 的地址、认证、契约和字符串测量值支持尚未确认；若正式接口只接受 JSON 数字，必须记录冲突、确认精度方案，不静默转换，也不宣称端到端验收通过。
 
-本周未生成课程 Excel 周报；待用户提出周报任务时，按模板填报并只列已提交到 GitHub 的实际成果物。
+课程 Excel 周报于 2026-11-07 补报，沿用现有项目周报版式。其项目总体进度按十周计划当时已完成 2 周记为 20%，不是正式 A-5 验收率；成果物栏列出原第二周提交的 13 个文件和本次周报文件，共 14 个路径。补报没有改变 2026-10-27 的实际执行日期，也没有把计划测试写成已通过。
 
 实际设计提交：[f060872a69be560e39f26db7da482cf2a0156b21](https://github.com/AsterPeng/A-2-40-50/commit/f060872a69be560e39f26db7da482cf2a0156b21)，已核对 GitHub `main` 曾指向同一 SHA。本周未创建 PR；本文的证据链接更新随后单独提交。
