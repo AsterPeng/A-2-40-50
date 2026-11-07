@@ -1,0 +1,10 @@
+node_modules/
+.tmp/
+.pnpm-store/
+*.inspect.ndjson
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
